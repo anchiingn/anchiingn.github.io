@@ -1,0 +1,15 @@
+@import url("nav.css"); 
+@import url("about_me.css");
+@import url("home.css");
+
+
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

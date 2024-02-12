@@ -1,0 +1,21 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    padding: 15px 40px 10px 40px;
+    border-bottom: 1px solid black;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+
+.nav_link:nth-child(odd) {
+    margin-right:15px;
+}
+
+.logo_img {
+    width: 50px;
+    
+}
