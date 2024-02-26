@@ -32,7 +32,7 @@ section.home {
 .home > div > i {
     font-size: 50px;
     margin-top: 20px;
-    animation: fade_down 1.6s ease-in-out infinite;
+    animation: fade_down 1.8s ease-in-out infinite;
 }
 
 .home > div > h5 {

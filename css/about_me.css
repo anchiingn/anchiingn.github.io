@@ -1,13 +1,21 @@
 section.about_me {
     padding: 0px 40px;
     width: 100dvw;
-    /* height: max-content; */
+    height: max-content;
     position: relative;
     z-index: 2;
-    height: 50em;
+    display: flex;
+
 }
 
-.about_me > .img_container{
+.img_side {
+    position: sticky;
+    top: 150px;
+    background-color: pink;
+    height: fit-content;
+}
+
+.img_container{
     width: 23em;
     height: 30em;
     border-radius: 300px 300px 0 0;
