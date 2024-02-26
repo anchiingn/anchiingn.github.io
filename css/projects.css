@@ -8,21 +8,31 @@
 #projects > .title {
     color: white;
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .project_container {
     display: flex;
     justify-content: space-around;
     color: white;
+    position: relative;
+}
+
+.project_container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.one, .two {
+    background-color: rgb(34, 33, 33);
 }
 
 .project_info {
     margin: 0 50px;
-    background-color: aqua;
-    width: 30em;
-    height: 300px;
+    width: 35em;
+    height: max-content;
     position: sticky;
     top: 200px;
+
 }
 
 .project_img {
@@ -31,4 +41,42 @@
     height: 20em;
     border-radius: 40px;
     background-color: white;
+}
+
+.project-top {
+    font-size: 3em;
+    display: flex;
+}
+
+.project_name {
+    position: relative;
+    top: 45px;
+    font-size: 2em;
+    height: fit-content;
+}
+
+.project_name div {
+    margin: -15px 0;
+}
+
+.project_name > div:nth-child(2) {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+
+.project_name > div:nth-child(3) {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    opacity: 0.5;
+}
+
+.project-bottom {
+    position: relative;
+    top: 65px;
+    left: 75px;
+}
+
+.project-bottom p {
+    margin-top: 20px;
+    width: 30em;
 }

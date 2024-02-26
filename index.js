@@ -2,11 +2,11 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.home', {
+gsap.to('.one', {
     duration: 20,
     opacity:0,
     scrollTrigger: {
-        trigger: '.home',
+        trigger: '.one',
         start: '65% center',
         end: 'bottom center', 
         scrub: true,
@@ -14,14 +14,3 @@ gsap.to('.home', {
     }
 })
 
-gsap.to('.scroll_down', {
-    duration: 20,
-    opacity:0,
-    scrollTrigger: {
-        trigger: '.home',
-        start: '65% center',
-        end: '75% center', 
-        scrub: true,
-        markers: true
-    }
-})
