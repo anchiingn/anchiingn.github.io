@@ -1,42 +1,22 @@
-section.home {
-    padding: 120px 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+.about_me {
+    width: 100dvw;
+}
+.title {
+    width: fit-content;
+    font-size: calc(10vw + 1vh); /* Font size based on viewport width and height */
 }
 
-.home > h1 {
-    font-size: 150px;
-    margin-bottom: 20px;
-    animation: fade_up 1.6s ease-in-out;
+.aboutme_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.home > p {
-    font-size: 25px;
-    width: calc(100% - 10em);
-    animation: fade_up 1.6s ease-in-out;
-    text-align: center;
+.aboutme_info img {
+    width: 80%;
 }
 
-
-.home > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 180px;
-}
-
-.home > div > i {
-    font-size: 50px;
-    margin-top: 20px;
-    animation: fade_down 1.8s ease-in-out infinite;
-}
-
-.home > div > h5 {
-    margin-bottom: 10px;
+.aboutme_info p {
+    margin: 20% auto 0px auto;
 }
 
 @keyframes fade_up {
