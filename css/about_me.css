@@ -1,12 +1,19 @@
 #about_me {
     width: 100dvw;
     margin-bottom: 80px;
-    margin-top: 20px;
+    position: fixed;
+    z-index: 0;
 }
 .title {
     width: fit-content;
-    font-size: calc(10vw + 1vh); 
+    font-size: calc(8vw + 1vh); 
     font-weight: bold;
+}
+
+#about_me .title {
+    position: relative;
+    left: -5px;
+    animation: fade_up 1s ease-in;
 }
 
 .aboutme_info {
@@ -17,20 +24,27 @@
 .aboutme_info img {
     width: 70%;
     margin: auto;
+    border-radius: 40px;
+    animation: fade_right 1.25s ease-in;
 }
 
 .aboutme_info div {
-    width: 29em;
+    width: 25.5em;
     margin: auto;
 }
 
 .aboutme_info div h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    position: relative;
+    right: 3px;
+    font-size: 4em;
+    margin-bottom: -15px;
+    animation: fade_left 1s ease-in;
+    background-color: transparent;
 }
 
 .aboutme_info div p {
-    font-size: 20.5px;
+    font-size: 20px;
+    animation: fade_left 1s ease-in;
 }
 
 
@@ -47,14 +61,26 @@
     }
 }
 
-@keyframes fade_down {
+@keyframes fade_left {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateX(20px);
     }
     
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade_right {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

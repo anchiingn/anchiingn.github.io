@@ -2,11 +2,21 @@
 @import url("about_me.css");
 @import url("projects.css");
 
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('Akira Expanded.tff') format('tff');
+}   
+
+:root {
+    /* --color-white: #e8eddf */
+    --color-white: #d9dcd6
+
+}
 
 * {
     margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-white);
 }
 
 a {
