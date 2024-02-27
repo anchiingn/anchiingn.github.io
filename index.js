@@ -10,7 +10,18 @@ gsap.to('.one', {
         start: '65% center',
         end: 'bottom center', 
         scrub: true,
-        markers: true
+        markers: false
     }
 })
 
+gsap.to('#project_menu', {
+    duration: 5,
+    opacity:0,
+    scrollTrigger: {
+        trigger: '#project_menu',
+        start: 'top 30%',
+        end: 'bottom 10%', 
+        scrub: true,
+        markers: true
+    }
+})

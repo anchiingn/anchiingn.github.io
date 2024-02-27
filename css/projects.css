@@ -6,11 +6,12 @@
     margin-bottom: 30px;
 }
 
-#projects > .title {
-    padding-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-    left: -12px;
+#projects > .menu {
+    padding-top: 30px;
+    margin-bottom: 150px;
+    position: sticky;
+    top: 50px;
+    margin-left: -2px;
 }
 
 .project_container {
@@ -49,35 +50,53 @@
     display: flex;
 }
 
-.project_name {
+.project_num {
+    font-family: 'Akira Expanded';
+
+}
+
+.project_name > div:first-child{
     position: relative;
     top: 45px;
-    font-size: 2em;
+    font-size: 1.2em;
+    font-family: 'Akira Expanded';
     height: fit-content;
 }
 
-.project_name div {
-    margin: -15px 0;
-}
-
-.project_name > div:nth-child(2) {
-    -webkit-text-stroke: 1px var(--color-white);
-    color: transparent;
-}
-
-.project_name > div:nth-child(3) {
-    -webkit-text-stroke: 1px var(--color-white);
-    color: transparent;
-    opacity: 0.5;
-}
 
 .project-bottom {
     position: relative;
-    top: 65px;
-    left: 75px;
+    top: 55px;
+    font-size: 18px;
+}
+
+.project-bottom > div:nth-child(2) {
+    font-size: 15px;
+    opacity: 0.5;
 }
 
 .project-bottom p {
     margin-top: 20px;
-    width: 30em;
+    width: 25em;
+}
+
+.link_button a {
+    position: relative;
+    top: 35px;
+    padding: 6px 25px;
+    margin-right: 20px;
+    border-radius: 25px;
+    border: 1.5px solid var(--color-black);
+}
+
+
+.link_button a:hover {
+    cursor: pointer;
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    & i {
+        background-color: transparent;
+        color: white;
+    }
 }

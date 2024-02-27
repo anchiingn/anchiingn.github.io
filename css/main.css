@@ -8,15 +8,16 @@
 }   
 
 :root {
-    /* --color-white: #e8eddf */
-    --color-white: #d9dcd6
-
+    /* --colors */
+    --color-white: #e1e5de;
+    --color-black: #292924;
 }
 
 * {
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 a {

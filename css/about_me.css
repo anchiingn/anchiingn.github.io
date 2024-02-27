@@ -4,10 +4,13 @@
     position: fixed;
     z-index: 0;
 }
-.title {
+.menu {
     width: fit-content;
     font-size: calc(8vw + 1vh); 
     font-weight: bold;
+    font-family: 'Akira Expanded';
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 #about_me .title {
@@ -43,8 +46,9 @@
 }
 
 .aboutme_info div p {
-    font-size: 20px;
+    font-size: 16px;
     animation: fade_left 1s ease-in;
+    text-align: justify;
 }
 
 
