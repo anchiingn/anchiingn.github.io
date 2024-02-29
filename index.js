@@ -2,28 +2,19 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.one', {
-    duration: 20,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: '.one',
-        start: '65% center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false
-    }
-})
 
-gsap.to('.two', {
-    duration: 20,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: '.two',
-        start: '65% center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false
-    }
+gsap.utils.toArray(".project_container").forEach(e => {
+    gsap.to(e, {
+        duration: 20,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: e,
+            start: '65% center',
+            end: 'bottom center',
+            scrub: true,
+            markers: true
+        }
+    })
 })
 
 gsap.to('#project_menu', {
@@ -101,23 +92,23 @@ gsap.to('#project_menu', {
 
 
 
-gsap.utils.toArray('.link_button').forEach((element) => {
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: element,
-            scrub: 1,
-        }
-    })
-        .from(element, {
-            stagger: 1,
-            opacity:0,
-            scrollTrigger: {
-                trigger: element,
-                start: '-350px 30%',
-                end: '-10% 35%',
-                scrub: 2,
-                // markers: true
-            }
-        });
-});
+// gsap.utils.toArray('.link_button').forEach((element) => {
+//     gsap.timeline({
+//         scrollTrigger: {
+//             trigger: element,
+//             scrub: 1,
+//         }
+//     })
+//         .from(element, {
+//             stagger: 1,
+//             opacity:0,
+//             scrollTrigger: {
+//                 trigger: element,
+//                 start: '-350px 30%',
+//                 end: '-10% 35%',
+//                 scrub: 2,
+//                 // markers: true
+//             }
+//         });
+// });
 

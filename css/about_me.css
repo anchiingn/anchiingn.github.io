@@ -90,3 +90,28 @@
         transform: translateX(0);
     }
 }
+
+
+@media screen and (max-width: 700px) {
+    .aboutme_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme_info >div {
+        width: 100%;
+    }
+
+    .aboutme_info >div >p {
+        margin: 0 auto;
+        width: calc(100% - 5em);
+        height: fit-content;
+    }
+
+    .aboutme_info >div >h1 {
+        font-size: calc(8vw + 1vh); 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}

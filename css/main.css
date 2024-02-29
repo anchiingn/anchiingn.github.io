@@ -1,6 +1,7 @@
 @import url("nav.css"); 
 @import url("about_me.css");
 @import url("projects.css");
+@import url("contact.css");
 
 @font-face {
     font-family: 'Akira Expanded';

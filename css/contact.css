@@ -1,0 +1,7 @@
+#contact {
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    top: 50em;
+    border-top: 1.5 solid var(--color-black);
+}
