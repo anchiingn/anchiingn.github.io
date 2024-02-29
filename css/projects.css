@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+    margin: 0 50px;
 }
 
 .project_container:nth-child(odd) {
@@ -35,14 +36,6 @@
     position: sticky;
     top: 200px;
 
-}
-
-.project_img {
-    margin: 0 ;
-    width: 35em;
-    height: 20em;
-    border-radius: 40px;
-    background-color: black;
 }
 
 .project-top {
@@ -105,16 +98,30 @@
 .project_images {
     margin-bottom: 150px;
     position: relative;
+
 }
 
-.img-two {
-    right: -350px;
-    width: 200px;
-    background-color: aqua;
+.project_img {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 40px;
 }
 
-.img-one.p-1 {
-    background: url('/images/stickycat_img1.png');
-    background-size: cover;
-    background-position: center;
+
+/* .ipad.p-1 {
+    position: relative;
+    left: 135px;
+} */
+
+.iphone {
+    width: 20%;
+    position: relative;
+    top: -100px;
+    left: 90px;
+    background-color: transparent;
+}
+
+.ipad.p-1 img, .iphone.p-1 img{
+    width: 100%;
+    background-color: transparent;
 }
