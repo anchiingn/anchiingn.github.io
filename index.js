@@ -1,33 +1,33 @@
-// javascrip here
+if (window.innerWidth > 700) {
+    gsap.registerPlugin(ScrollTrigger);
 
-gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray(".project_container").forEach(e => {
+        gsap.to(e, {
+            duration: 20,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: e,
+                start: '65% center',
+                end: 'bottom center',
+                scrub: true,
+                // markers: true
+            }
+        });
+    });
 
-
-gsap.utils.toArray(".project_container").forEach(e => {
-    gsap.to(e, {
-        duration: 20,
+    gsap.to('#project_menu', {
+        duration: 5,
         opacity: 0,
         scrollTrigger: {
-            trigger: e,
-            start: '65% center',
-            end: 'bottom center',
+            trigger: '#project_menu',
+            start: 'top top',
+            end: 'bottom 5%',
             scrub: true,
             markers: true
         }
-    })
-})
+    });
+}
 
-gsap.to('#project_menu', {
-    duration: 5,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: '#project_menu',
-        start: 'top top',
-        end: 'bottom 5%',
-        scrub: true,
-        // markers: true
-    }
-})
 
 // gsap.utils.toArray('.project_num').forEach((element) => {
 //     gsap.timeline({

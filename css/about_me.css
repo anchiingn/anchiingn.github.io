@@ -1,8 +1,6 @@
 #about_me {
     width: 100dvw;
     margin-bottom: 80px;
-    position: fixed;
-    z-index: 0;
 }
 .menu {
     width: fit-content;
