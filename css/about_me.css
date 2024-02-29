@@ -13,15 +13,17 @@
     margin-bottom: 15px;
 }
 
-#about_me .title {
+#about_me .menu {
     position: relative;
     left: -5px;
+    top: 10px;
     animation: fade_up 1s ease-in;
 }
 
 .aboutme_info {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    margin-top: 30px;
 }
 
 .aboutme_info img {

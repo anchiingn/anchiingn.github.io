@@ -24,7 +24,7 @@
     flex-direction: row-reverse;
 }
 
-.one, .two {
+.one, .two , .three{
     background-color: var(--color-white);
 }
 
@@ -38,7 +38,7 @@
 }
 
 .project_img {
-    margin: 0 50px;
+    margin: 0 ;
     width: 35em;
     height: 20em;
     border-radius: 40px;
@@ -57,10 +57,11 @@
 
 .project_name > div:first-child{
     position: relative;
-    top: 45px;
+    top: 30px;
     font-size: 1.2em;
     font-family: 'Akira Expanded';
     height: fit-content;
+
 }
 
 
@@ -99,4 +100,21 @@
         background-color: transparent;
         color: white;
     }
+}
+
+.project_images {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.img-two {
+    right: -350px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.img-one.p-1 {
+    background: url('/images/stickycat_img1.png');
+    background-size: cover;
+    background-position: center;
 }
