@@ -1,7 +1,33 @@
 #contact {
     width: 100dvw;
-    height: 100dvh;
-    position: relative;
-    top: 50em;
-    border-top: 1.5 solid var(--color-black);
+    height: 25em;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+#contact .menu {
+    background-color: transparent;
+    width: calc(100% - 200px);
+    color: var(--color-white);
+}
+
+
+#contact #contact_links {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 30px;
+    gap: 10px;
+    background-color: transparent;
+}
+
+#contact_links > div {
+    background-color: transparent;
+    color: var(--color-white);
 }

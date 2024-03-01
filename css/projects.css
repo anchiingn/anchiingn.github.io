@@ -28,14 +28,20 @@
     background-color: var(--color-white);
 }
 
+.three {
+    margin-bottom: 150px;
+}
+
 .project_info {
     margin: 0 50px;
     width: 35em;
     height: max-content;
     position: sticky;
-    top: 200px;
+    top: 100px;
 
 }
+
+
 
 .project-top {
     font-size: 3em;
@@ -73,6 +79,8 @@
     width: 25em;
 }
 
+
+
 .link_button a {
     position: relative;
     top: 35px;
@@ -93,6 +101,7 @@
         color: white;
     }
 }
+
 
 .project_images {
     margin-bottom: 150px;
@@ -123,11 +132,13 @@
 .ipad.p-1 img, .iphone.p-1 img{
     width: 100%;
     background-color: transparent;
+    filter: drop-shadow(0px 10px 10px rgba(115, 115, 112, 0.5));
 }
 
 
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 1000px) {
     .project_container {
         display: block;
 
@@ -155,13 +166,11 @@
     }
 
     .project-top {
-        background-color: antiquewhite;
         font-size: 10px;
         display: block;
     }
 
     .project_num {
-        background-color: antiquewhite;
     }
 
     .project-bottom {

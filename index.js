@@ -1,18 +1,30 @@
-if (window.innerWidth > 700) {
+if (window.innerWidth > 1000) {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".project_container").forEach(e => {
-        gsap.to(e, {
-            duration: 20,
-            opacity: 0,
-            scrollTrigger: {
-                trigger: e,
-                start: '65% center',
-                end: 'bottom center',
-                scrub: true,
-                // markers: true
-            }
-        });
+    
+
+    gsap.to('.one', {
+        duration: 20,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '.one',
+            start: '65% center',
+            end: 'bottom center',
+            scrub: true,
+            // markers: true
+        }
+    });
+
+    gsap.to('.two', {
+        duration: 20,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '.two',
+            start: '65% center',
+            end: 'bottom center',
+            scrub: true,
+            // markers: true
+        }
     });
 
     gsap.to('#project_menu', {
@@ -23,7 +35,7 @@ if (window.innerWidth > 700) {
             start: 'top top',
             end: 'bottom 5%',
             scrub: true,
-            markers: true
+            // markers: true
         }
     });
 }
