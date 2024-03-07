@@ -11,7 +11,6 @@ if (window.innerWidth > 1000) {
             start: '65% center',
             end: 'bottom center',
             scrub: true,
-            // markers: true
         }
     });
 
@@ -23,7 +22,6 @@ if (window.innerWidth > 1000) {
             start: '65% center',
             end: 'bottom center',
             scrub: true,
-            // markers: true
         }
     });
 
@@ -35,7 +33,6 @@ if (window.innerWidth > 1000) {
             start: 'top top',
             end: 'bottom 5%',
             scrub: true,
-            // markers: true
         }
     });
 }
