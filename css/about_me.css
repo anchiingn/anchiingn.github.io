@@ -4,7 +4,7 @@
 }
 .menu {
     width: fit-content;
-    font-size: calc(8vw + 1vh); 
+    font-size: calc(7vw + 1vh); 
     font-weight: bold;
     font-family: 'Akira Expanded';
     margin-top: 10px;
@@ -32,23 +32,22 @@
 }
 
 .aboutme_info div {
-    width: 25.5em;
+    width: 32em;
     margin: auto;
 }
 
 .aboutme_info div h1 {
     position: relative;
     right: 3px;
-    font-size: 4em;
-    margin-bottom: -15px;
+    font-size: calc(2vw + 1vh); 
     animation: fade_left 1s ease-in;
     background-color: transparent;
 }
 
 .aboutme_info div p {
-    font-size: 16px;
+    font-size: calc(12px + 6px);
     animation: fade_left 1s ease-in;
-    text-align: justify;
+    margin-right: 30px;
 }
 
 
@@ -90,7 +89,7 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .aboutme_info {
         display: flex;
         flex-direction: column;

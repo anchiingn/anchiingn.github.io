@@ -11,7 +11,7 @@ if (window.innerWidth > 1000) {
             start: '65% center',
             end: 'bottom center',
             scrub: true,
-            // markers: true
+            markers: true
         }
     });
 
