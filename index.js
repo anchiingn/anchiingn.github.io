@@ -1,8 +1,6 @@
 if (window.innerWidth > 1000) {
     gsap.registerPlugin(ScrollTrigger);
 
-    
-
     gsap.to('.one', {
         duration: 20,
         opacity: 0,
