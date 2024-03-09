@@ -12,6 +12,7 @@
     background-color: transparent;
     width: calc(100% - 200px);
     color: var(--color-white);
+    margin-left: -5px;
 }
 
 
