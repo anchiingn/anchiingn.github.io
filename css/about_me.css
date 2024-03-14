@@ -28,7 +28,7 @@
     width: 70%;
     margin: auto;
     border-radius: 40px;
-    animation: fade_right 1.25s ease-in;
+    /* animation: fade_right 1.25s ease-in; */
 }
 
 .aboutme_info div {
@@ -40,19 +40,19 @@
     position: relative;
     right: 3px;
     font-size: calc(2vw + 1vh); 
-    animation: fade_left 1s ease-in;
+    /* animation: fade_left 1s ease-in; */
     background-color: transparent;
 }
 
 .aboutme_info div p {
     font-size: calc(12px + 6px);
-    animation: fade_left 1s ease-in;
+    /* animation: fade_left 1s ease-in; */
     margin-right: 30px;
 }
 
 
 
-@keyframes fade_up {
+/* @keyframes fade_up {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -86,7 +86,7 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 
 @media screen and (max-width: 800px) {
